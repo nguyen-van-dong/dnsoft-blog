@@ -1,6 +1,11 @@
 ---
 title: Cài đặt jenkins trên ubuntu 18.04
 date: 2021-09-23 11:02:46
+author: Đồng Nguyễn
+tags: [CI / CD, Jenkins, Ubuntu 18.04]
+thumbnail: 1.jpg
+categories:
+- [DevOps]
 ---
 
 ## Nội dung
