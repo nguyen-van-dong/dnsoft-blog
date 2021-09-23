@@ -1,10 +1,11 @@
 ---
 title: Cài đặt jenkins trên ubuntu 18.04
+date: 2021-09-23 11:02:46
 ---
 
 ## Nội dung
 
-Xin chào 500 anh em =))), hôm nay mình muốn chia sẻ đến các bạn một chủ đề về devops. Chúng ta sẽ học cách cài đặt jenkins trên ubuntu để làm CI (Continuous Integration), CD (Continuous Deployment).
+Xin chào 500 anh em =))), chuyện là mình được giao một cái task liên quan tới CI CD nên mình nhảy vô tìm hiểu thằng jenkins. Sau thời gian vọc thì mình muốn chia sẻ đến các bạn thằng khứa này. Chúng ta sẽ học cách cài đặt jenkins trên ubuntu để làm CI (Continuous Integration), CD (Continuous Deployment).
 Trong phần tiếp theo thì mình sẽ hướng dẫn cách tích hợp jenkins với dự án nodejs và laravel nhé. Ok, bắt đầu thôi nào.
 
 Chuẩn bị:
@@ -20,13 +21,14 @@ Cài đặt java sdk, mình cài java 8 nhé, java 11 nó không support thằng
 1. `sudo apt update` <br>
 2. `sudo apt install openjdk-8-jdk openjdk-8-jre`
 - Sau khi cài xong thì chúng ta kiểm tra nhẹ thử đã thành công chưa bằng câu lệnh<br>
-`java -version`
-- Nó log ra màn hình tựa tựa như thế này thì đã ok nhé.
+  `java -version`
+- Nếu log ra màn hình tựa tựa như thế này thì đã ok nhé.
 ```
 openjdk version "1.8.0_252"
 OpenJDK Runtime Environment (build 1.8.0_252-8u252-b09-1ubuntu1-b09)
 OpenJDK 64-Bit Server VM (build 25.252-b09, mixed mode)
 ```
+
 Bước 2:
 Sau khi cài java xong thì chúng ta sẽ cài jenkins, cái này mới chính nek =)) <br>
 Các bạn sẽ gõ lần lượt các câu lệnh sau:
@@ -74,7 +76,7 @@ Nếu các bạn chưa biết dùng `vim` hoặc `nano` thì lên mạng search 
 
 Sau khi nhập password đúng thì sẽ đến phần tạo tài khoản, ở đây các bạn cứ nhiệt tình tạo tài khoản gì tùy thích nhé. <br>
 Xong rồi nhé :D. <br>
-Hẹn gặp lại các bạn ỏ bài viết tiếp theo về cách tích hợp với source Nodejs và laravel nhé.
+Hẹn gặp lại các bạn ở bài viết tiếp theo về cách tích hợp với source Nodejs và laravel nhé.
 Cảm ơn các bạn đã kiên nhẫn đọc tới đây :D
 
 Don't forget: <br>
