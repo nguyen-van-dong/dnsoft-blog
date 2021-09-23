@@ -1,5 +1,5 @@
 ---
-title: Cài đặt git trên ubuntu 18.04
+title: Cài đặt nodejs và git trên ubuntu 18.04
 date: 2021-09-24 08:12:16
 author: Đồng Nguyễn
 tags: [CI / CD, Git]
@@ -38,7 +38,15 @@ ubuntu@ip-xx-xx-xx-xx:~$ npm -v
 6.14.15
 ```
 
-Thế là xong, đơn giản phải không các bạn, hy vọng nó sẽ k làm khó được các bạn.<br>
+Ok sau khi đã có nodejs rồi thì công việc còn lại chỉ là chạy command bên dưới để cài git thôi.<br>
+`npm install git -y`
+
+Kiểm tra thử đã cài xong chưa nhé, hiển thị ra như bên dưới là ổn định rồi đấy :D<br>
+```angular2html
+ubuntu@ip-xx-xx-xx-xx:~$ git --version
+git version 2.17.1
+```
+Thế là xong, đơn giản phải không các bạn, hy vọng nó sẽ không làm khó được các bạn.<br>
 Hẹn gặp lại các bạn ở các bài viết tiếp theo.
 
 Don't forget: <br>
