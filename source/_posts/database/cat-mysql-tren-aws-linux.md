@@ -91,11 +91,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-Ok, giờ mình sẽ check thử có bao nhiêu databases nha:
-```angular2html
-mysql>show databases;
-```
-
+Ok, giờ mình sẽ check thử có bao nhiêu databases bằng command line `show databases`:
 ```angular2html
 mysql> show databases;
 +--------------------+
