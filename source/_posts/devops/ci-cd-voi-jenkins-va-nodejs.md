@@ -1,11 +1,11 @@
 ---
 title: CI, CD với Jenkins và source Nodejs
 author: Đồng Nguyễn
-tags: [CI / CD, Jenkins, Nodejs]
+tags: [CI / CD, Jenkins, NodeJS]
 categories:
 - [DevOps]
 ---
-Ở loạt series này thì mình sẽ dùng hoàn toàn bằng aws, nên các bạn hãy tạo thêm một instance EC2 trên aws nữa để tạo webserver chạy nodejs nhé.
+Ở loạt series này thì mình sẽ dùng hoàn toàn bằng aws, nên các bạn hãy tạo thêm một instance EC2 trên aws nữa để tạo webserver chạy Nodejs nhé.
 
 Sau khi đã login vô con server EC2 rồi thì chúng ta sẽ cài nodejs, và git cho nó.
 Cách cài 2 thằng này thì mình đã có bài viết hướng dẫn rồi nhé. [Link](https://dnsoft-blog.netlify.app/devops/cai-dat-git-tren-ubuntu-18.04.html) 

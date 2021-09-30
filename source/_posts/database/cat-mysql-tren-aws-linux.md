@@ -1,5 +1,5 @@
 ---
-title: Cài đặt nodejs và git trên aws linux
+title: Cài đặt mysql trên aws linux
 date: 2021-09-30 16:15:54
 author: Đồng Nguyễn
 tags: [Database, PHP]
