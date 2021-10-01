@@ -40,7 +40,7 @@ Các bạn sẽ gõ lần lượt các câu lệnh sau:
 1. `wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -`
 2. `sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'`
 3. `sudo apt update`
-4. `sudo apt install jenkins`
+4. `sudo apt install jenkins -y`
 
 Sau khi chạy xong câu lệnh thứ 4 thì chúng ta sẽ start jenkins lên: <br>
 `sudo systemctl start jenkins` <br>

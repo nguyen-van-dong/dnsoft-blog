@@ -87,18 +87,20 @@ Ok, hiện tại server node của mình đã chạy mà không cần dùng `nod
 
 ## II. Setup jenkins
 
-Chúng ta sẽ vào server jenkins chúng ta sẽ tạo 1 thư mục `jenkins` trong thư mục `home`, sau đó cd vào thư mục vừa tạo nha.
+Chúng ta sẽ vào server jenkins và tạo 1 thư mục `jenkins` trong thư mục `home`, sau đó cd vào thư mục vừa tạo nha.
 
-Quay về server node các bạn copy private key. Bạn `cd /home/www-user-node/.ssh` và `cat id_rsa`, sau đó copy toàn bộ nội dung file này
-và quay về server jenkins trong thư mục jenkins ơ home và tạo 1 file pem để paste đống vừa copy vào
+Bước tiếp theo chúng ta sẽ quay về server node các bạn copy private key. Bạn `cd /home/www-user-node/.ssh` và `cat id_rsa`,
+sau đó copy toàn bộ nội dung file này và quay về server jenkins trong thư mục jenkins ở folder home và tạo 1 file pem để paste đống vừa copy vào
 `vi web-server-node.pem`, sau đó change quyền cho nó là 400 thôi nha, `chmod 400 web-server-node.pem`.
 
 Tiếp theo `cd ..` ra ngoài home để change quyền cho cả thư mục jenkins này luôn nha.
 
 `chown -Rf jenkins:root jenkins/`
 
-Tiếp theo các bạn switch qua user là `jenkins` bằng command `su - jenkins`. Nếu không switch qua được thì các bạn vào `vi passwd` xuống cuối file và đổi thành `bash` cho user `jenkins` nhé, sau đó switch vào sẽ được.
->jenkins:x:111:115:Jenkins,,,:/var/lib/jenkins:/bin/bash
+Tiếp theo các bạn switch qua user là `jenkins` bằng command `su - jenkins`.
+Nếu không switch qua được thì các bạn vào `vi /etc/passwd` xuống cuối file và đổi thành `bash` cho user `jenkins` nhé, sau đó switch vào sẽ được.
+Sau khi đổi xong thì chúng ta sẽ được như thế này.<br>
+`jenkins:x:111:115:Jenkins,,,:/var/lib/jenkins:/bin/bash`
 
 Ok, sau khi switch qua thì chúng ta sẽ remote vào server node bằng user ``jenkins`` này nhé
 
