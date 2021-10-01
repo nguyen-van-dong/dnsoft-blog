@@ -30,6 +30,27 @@ Tiếp theo chúng ta sẽ cài Jenkins
 
 `sudo yum install jenkins -y`
 
+Nếu ở đây các bạn cài bị lỗi như vầy thì cứ bình tĩnh xem tiếp nhé
+```angular2html
+jenkins/primary_db                                                                                                       | 175 kB  00:00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package jenkins.noarch 0:2.314-1.1 will be installed
+--> Processing Dependency: daemonize for package: jenkins-2.314-1.1.noarch
+--> Finished Dependency Resolution
+Error: Package: jenkins-2.314-1.1.noarch (jenkins)
+           Requires: daemonize
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+```
+
+Các bạn fix lỗi đó bằng cách chạy lần lượt các câu lệnh này nhé
+```angular2html
+1. sudo amazon-linux-extras install epel -y 
+2. sudo yum update -y 
+3. sudo yum install jenkins java-1.8.0-openjdk-devel 
+```
+
 Sau khi cài xong thì chúng ta sẽ start jenkins lên: <br>
 `sudo systemctl start jenkins` <br>
 Kiểm tra status của jenkins<br>
