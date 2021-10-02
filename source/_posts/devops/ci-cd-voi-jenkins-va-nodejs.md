@@ -51,6 +51,7 @@ Tiếp tục chúng ta sẽ cho quyền `600` cho file này nhé (quyền `600` 
 
 `chmod 600 authorized_keys`
 
+>>Các bạn lưu ý kỹ chỗ này nha, không là tí mình remote từ server jenkins vào server node này nó bị lỗi permission đấy. 
 
 Chúng ta vào lại thư muc `/app/my-node-app` bạn chạy `npm install` để nó cài đặt các dependencies của project chúng ta nhé.
 
